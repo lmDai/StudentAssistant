@@ -1,0 +1,62 @@
+ext {
+
+    android = [
+            compileSdkVersion: 25,
+            buildToolsVersion: "25.0.2",
+            applicationId    : "com.uiho.dlg",
+            minSdkVersion    : 16,
+            targetSdkVersion : 25,
+            versionCode      : 1,
+            versionName      : "1.0"
+    ]
+
+    dependVersion = [
+            support      : "25.3.1",
+            constraint   : "1.0.2",
+            multidex     : "1.0.1",
+            dagger       : "2.0.2",
+            annotation   : "10.0-b28",
+            fragmentation: "0.7.10",
+            butterknife  : "8.8.1",
+            retrofit     : "2.1.0",
+            rxjava       : "2.0.5",
+            rxandroid    : "2.0.1",
+            okhttp       : "3.7.0",
+            fastjson     : "1.1.52.android",
+            adapterrxjava: "1.0.0",
+            navigationbar: "2.0.4"
+    ]
+
+    dependencies = [
+            //android-support
+            "support-v4"          : "com.android.support:support-v4:${dependVersion.support}",
+            "appcompat-v7"        : "com.android.support:appcompat-v7:${dependVersion.support}",
+            "design"              : "com.android.support:design:${dependVersion.support}",
+            "recyclerview"        : "com.android.support:recyclerview-v7:${dependVersion.support}",
+            "cardview"            : "com.android.support:cardview-v7:${dependVersion.support}",
+            "constraint"          : "com.android.support.constraint:constraint-layout:${dependVersion.constraint}",
+            //64 k引用限制
+            "multidex"            : "com.android.support:multidex:${dependVersion.multidex}",
+            //dagger
+            "dagger"              : "com.google.dagger:dagger:${dependVersion.dagger}",
+            "dagger-compiler"     : "com.google.dagger:dagger-compiler:${dependVersion.dagger}",
+            "annotation"          : "org.glassfish:javax.annotation:${dependVersion.annotation}",
+            //流失交互
+            "fragmentation"       : "me.yokeyword:fragmentation:${dependVersion.fragmentation}",
+            //butterKnife
+            "butterknife"         : "com.jakewharton:butterknife:${dependVersion.butterknife}",
+            "butterknife-compiler": "com.jakewharton:butterknife-compiler:${dependVersion.butterknife}",
+            //retrofit rxJava okHttp
+            "retrofit"            : "com.squareup.retrofit2:retrofit:${dependVersion.retrofit}",
+            "converter-gson"      : "com.squareup.retrofit2:converter-gson:${dependVersion.retrofit}",
+            "adapter-rxjava"      : "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:${dependVersion.adapterrxjava}",
+            "rxjava"              : "io.reactivex.rxjava2:rxjava:${dependVersion.rxjava}",
+            "rxandroid"           : "io.reactivex.rxjava2:rxandroid:${dependVersion.rxandroid}",
+            "okhttp"              : "com.squareup.okhttp3:okhttp:${dependVersion.okhttp}",
+            "okhttp-logging"      : "com.squareup.okhttp3:logging-interceptor:${dependVersion.okhttp}",
+            //fastJson
+            "fastjson"            : "com.alibaba:fastjson:${dependVersion.fastjson}",
+            //navigationBar
+            "navigationbar"       : "com.ashokvarma.android:bottom-navigation-bar:${dependVersion.navigationbar}"
+    ]
+}
