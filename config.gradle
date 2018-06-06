@@ -11,20 +11,24 @@ ext {
     ]
 
     dependVersion = [
-            support      : "25.3.1",
-            constraint   : "1.0.2",
-            multidex     : "1.0.1",
-            dagger       : "2.0.2",
-            annotation   : "10.0-b28",
-            fragmentation: "0.7.10",
-            butterknife  : "8.8.1",
-            retrofit     : "2.1.0",
-            rxjava       : "2.0.5",
-            rxandroid    : "2.0.1",
-            okhttp       : "3.7.0",
-            fastjson     : "1.1.52.android",
-            adapterrxjava: "1.0.0",
-            navigationbar: "2.0.4"
+            support           : "25.3.1",
+            constraint        : "1.0.2",
+            multidex          : "1.0.1",
+            dagger            : "2.0.2",
+            annotation        : "10.0-b28",
+            fragmentation     : "0.7.10",
+            butterknife       : "8.8.1",
+            retrofit          : "2.1.0",
+            rxjava            : "2.0.5",
+            rxandroid         : "2.0.1",
+            okhttp            : "3.7.0",
+            fastjson          : "1.1.52.android",
+            adapterrxjava     : "1.0.0",
+            navigationbar     : "2.0.4",
+            smartrefreshlayout: "1.1.0-alpha-6",
+            MZBannerView      : "v2.0.1",
+            glide             : "3.7.0",
+            AdapterHelper     : "2.9.40",
     ]
 
     dependencies = [
@@ -57,6 +61,10 @@ ext {
             //fastJson
             "fastjson"            : "com.alibaba:fastjson:${dependVersion.fastjson}",
             //navigationBar
-            "navigationbar"       : "com.ashokvarma.android:bottom-navigation-bar:${dependVersion.navigationbar}"
+            "navigationbar"       : "com.ashokvarma.android:bottom-navigation-bar:${dependVersion.navigationbar}",
+            "smartrefreshlayout"  : "com.scwang.smartrefresh:SmartRefreshLayout:${dependVersion.smartrefreshlayout}",
+            "MZBannerView"        : "com.github.pinguo-zhouwei:MZBannerView:${dependVersion.MZBannerView}",
+            "glide"               : "com.github.bumptech.glide:glide:${dependVersion.glide}",
+            "AdapterHelper"       : "com.github.CymChad:BaseRecyclerViewAdapterHelper:${dependVersion.AdapterHelper}",
     ]
 }
