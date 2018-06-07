@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main_item_title">
+        <item>个人信息</item>
+        <item>第二课堂</item>
+        <item>我的课表</item>   <!-- 特殊字符要转义-->
+        <item>考试安排</item>
+        <item>成绩查看</item>
+        <item>电费查询</item>
+        <item>学生事务</item>   <!-- 特殊字符要转义-->
+        <item>学习课堂</item>
+        <item>校园文化</item>
+        <item>二级学院</item>
+        <item>文件下载</item>   <!-- 特殊字符要转义-->
+        <item>校园公告</item>
+        <item>我的账号</item>
+        <item>关于我们</item>
+        <item>其他系统</item>
+    </string-array>
+    <array name="main_item_img">
+        <item>@drawable/g12</item>
+        <item>@drawable/g1</item>
+        <item>@drawable/g2</item>
+        <item>@drawable/g3</item>
+        <item>@drawable/g4</item>
+        <item>@drawable/g5</item>
+        <item>@drawable/g6</item>
+        <item>@drawable/g7</item>
+        <item>@drawable/g8</item>
+        <item>@drawable/g9</item>
+        <item>@drawable/g10</item>
+        <item>@drawable/g11</item>
+        <item>@drawable/g0</item>
+        <item>@drawable/g13</item>
+        <item>@drawable/g15</item>
+    </array>
+</resources>

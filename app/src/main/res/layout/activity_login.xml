@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    app:srlEnablePureScrollMode="true"
+    tools:context="com.uiho.dlg.ui.activity.LoginActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_100"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="@dimen/dp_80"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_36"
+                android:layout_marginRight="@dimen/dp_36"
+                android:layout_marginTop="@dimen/dp_40"
+                android:background="@drawable/bg_round_white"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_15">
+
+                <com.uiho.dlg.ui.widget.ClearableEditText
+                    android:id="@+id/edit_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edit"
+                    android:drawableLeft="@drawable/ic_xuehao"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:hint="请输入学号"
+                    android:inputType="number"
+                    android:maxLength="18"
+                    android:minHeight="@dimen/dp_36"
+                    android:padding="@dimen/dp_5"
+                    android:textSize="@dimen/sp_14" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@drawable/bg_edit"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/dp_36"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edit_password"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/ic_mima"
+                        android:drawablePadding="@dimen/dp_10"
+                        android:hint="请输入密码"
+                        android:inputType="textPassword"
+                        android:minHeight="@dimen/dp_36"
+                        android:padding="@dimen/dp_5"
+                        android:textSize="@dimen/sp_14" />
+
+                    <ImageView
+                        android:id="@+id/iv_showPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_invisible" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_36"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:background="@drawable/bg_btn_login"
+                    android:text="登\u3000\u3000录"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_18" />
+
+                <Button
+                    android:id="@+id/btn_tour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@drawable/bg_btn_login"
+                    android:minHeight="@dimen/dp_20"
+                    android:padding="@dimen/dp_3"
+                    android:text="游客模式"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

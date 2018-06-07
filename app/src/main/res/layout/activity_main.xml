@@ -6,24 +6,31 @@
     android:layout_height="match_parent"
     tools:context="com.uiho.dlg.MainActivity">
 
+    <include layout="@layout/base_top" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <FrameLayout
-            android:id="@+id/frame_content"
+        <com.zhouwei.mzbanner.MZBannerView
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_160"
+            app:canLoop="true"
+            app:indicatorAlign="center"
+            app:indicatorPaddingBottom="@dimen/dp_6"
+            app:indicatorPaddingLeft="@dimen/dp_10"
+            app:middle_page_cover="true"
+            app:open_mz_mode="true" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="@color/colorAccent"
-            android:orientation="vertical" />
-
-        <com.ashokvarma.bottomnavigation.BottomNavigationBar
-            android:id="@+id/bottom_navigation_bar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:scrollbars="none" />
     </LinearLayout>
 
 

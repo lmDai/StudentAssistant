@@ -29,6 +29,7 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
     compile rootProject.ext.dependencies["appcompat-v7"]
     compile rootProject.ext.dependencies["support-v4"]
@@ -52,4 +53,8 @@ dependencies {
     compile rootProject.ext.dependencies["okhttp-logging"]
     compile rootProject.ext.dependencies["fastjson"]
     compile rootProject.ext.dependencies["navigationbar"]
+    compile rootProject.ext.dependencies["smartrefreshlayout"]
+    compile rootProject.ext.dependencies["MZBannerView"]
+    compile rootProject.ext.dependencies["glide"]
+    compile rootProject.ext.dependencies["AdapterHelper"]
 }
